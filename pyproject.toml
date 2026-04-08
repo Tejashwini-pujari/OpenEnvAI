@@ -1,0 +1,21 @@
+[project]
+name = "support-env"
+version = "0.1.0"
+description = "Customer Support RL Environment using OpenEnv"
+authors = [
+    {name = "Tejashwini"}
+]
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "requests",
+    "openenv-core>=0.2.0"
+]
+
+[project.scripts]
+server = "server.app:app"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
